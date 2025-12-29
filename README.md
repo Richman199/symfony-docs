@@ -1,17 +1,27 @@
-<p align="center"><a href="https://symfony.com" target="_blank">
-    <img src="https://symfony.com/logos/symfony_dynamic_01.svg" alt="Symfony Logo">
-</a></p>
+git clone git@github.com:symfony/symfony-docs.git
+cd symfony-docs
+    <img git clone git@github.com:symfony/symfony-docs.git
+cd symfony-docs
+
 
 <h3 align="center">
   The official Symfony Documentation
-</h3>
+</h3># Build HTML version
+make html
+
+# Or if you're on Windows
+.\make.bat html
+
 
 <p align="center">
   <a href="https://symfony.com/doc/current/index.html">
     Online version
   </a>
   <span> | </span>
-  <a href="https://symfony.com/components">
+  <a href="https://symfony.com/components"># Using Python's built-in server
+cd _build/html
+python -m http.server 8000
+
     Components
   </a>
   <span> | </span>
@@ -50,7 +60,7 @@ $ php build.php
 After generating docs, serve them with the internal PHP server:
 
 ```bash
-$ php -S localhost:8000 -t output/
+$ php -S wordpress:8000 -t output/
 ```
 
-Browse `http://localhost:8000` to read the docs.
+Browse `http://wordpress:8000` to read the docs.
